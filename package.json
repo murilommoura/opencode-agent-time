@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "opencode-agent-time",
+  "version": "2.3.0",
+  "description": "OpenCode 2.3.0 TUI plugin: agent execution time, per-agent and per-model breakdowns in the sidebar.",
+  "type": "module",
+  "exports": {
+    "./tui": "./tui.tsx"
+  },
+  "files": [
+    "tui.tsx",
+    "rows.ts",
+    "recorder.ts",
+    "aggregate.ts",
+    "paging.ts",
+    "status.ts",
+    "README.md",
+    "examples"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "build": "bun build ./tui.tsx --target=bun --packages=external --outdir=dist"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.3.0"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.8.4",
+    "@opentui/solid": ">=0.8.4",
+    "solid-js": ">=1.9.0"
+  }
+}

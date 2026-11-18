@@ -1,0 +1,6 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "plugins": [
+    "/home/SEU_USUARIO/opencode-agent-time"
+  ]
+}
